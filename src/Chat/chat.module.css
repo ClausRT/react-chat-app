@@ -1,0 +1,23 @@
+.container {
+  background-color: aqua; /* Temporário, só pra ver o DIV */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.messageBox {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chatBox {
+  position: absolute;
+  top: 0;
+  bottom: 20;
+  width: 100%;
+  background-color: blueviolet;
+}

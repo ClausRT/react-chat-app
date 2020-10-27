@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ReactComponent as Logo } from "./logo.svg";
-import "./App.css";
+import styles from "./App.module.css";
 
 import Chat from "./Chat";
 import Auth from "./Auth";
@@ -8,10 +8,10 @@ import Auth from "./Auth";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <header>
-          <Logo title="logo" width="128" height="128" />
-          <span>React Chat</span>
+          <Logo title="logo" className={styles.logo} />
+          <h1>React Chat</h1>
         </header>
         <main>
           <Auth>
@@ -19,7 +19,7 @@ class App extends Component {
           </Auth>
         </main>
         <footer>
-          <span>Todos os direitos reservados a Claus Rodrigues Tessmann</span>
+          <p>Um webapp feio feito da maneira que deu por Claus Rodrigues Tessmann.</p>
         </footer>
       </div>
     );
